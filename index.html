@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/434/309/126/minimalism-cat-funny-digital-art-artwork-hd-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            height: 850px;
+            padding-top: 100px;
+        }
+        h1 {
+            margin-top: 100px;
+            background-image: linear-gradient(pink, red);
+            width: 590px;
+            margin-left: 650px;
+            border-radius: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: oblique;
+        }
+        #color {
+            background-color: yellow;
+            width: 200px;
+            height: 100px;
+            margin-top: 100px;
+            border-radius: 20px;
+            margin-left: 840px;
+        }
+        div {
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button {
+            height: 80px;
+            width: 180px;
+            margin-left: 0;
+            margin-top: 100px;
+            background-image: linear-gradient(pink, red);
+            border-radius: 30px;
+            font-weight: bolder;
+            font-size: 18px;
+            color: black;
+        }
+        button:hover {
+            background-image: linear-gradient(rgb(143, 123, 98), rgb(233, 123, 123));
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript colorChanger() Hands-on.</h1>
+    <div id="color" >WS101</div><br>
+    <button id="btn">Click the button!</button>
+
+    <script>
+        const color = document.getElementById("color");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener('click', changeColor);
+
+        function changeColor() {
+            if (color.style.backgroundColor === "yellow") {
+                color.style.backgroundColor = "green";
+            } else {
+                color.style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>
